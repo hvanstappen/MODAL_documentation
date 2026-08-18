@@ -1,0 +1,42 @@
+site_name: MODAL manual
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  language: nl
+
+
+nav:
+  - Home: index.md
+  - Installatie:
+      - Vereisten: vereisten.md
+      - Windows: install_windows.md
+      - MacOS: install_macos.md
+      - Linux: install_linux.md
+  - Werken met MODAL:
+    - Opstarten: start_app.md
+    - Opname archief: opname.md
+    - Verkennen: verkennen.md
+    - Analyse archief: analyse.md
+  - MODAL aanpassen:
+    - Instellingen: configuratie.md
+    - Modellen selecteren: modellen_selecteren.md
+    - Modellen toevoegen: modellen_toevoegen.md
+  - Geavanceerd gebruik:
+      - Connectie met database: db_connect.md
+  - Over MODAL:
+    - Project MODAL: about.md
+    - Veiligheid: security.md
+    - Ontwikkeling: code.md

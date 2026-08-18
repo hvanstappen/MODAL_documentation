@@ -1,0 +1,17 @@
+Het project [MODAL](https://advn.be/nl/over-advn/projecten/modal-project) heeft als doel te onderzoeken welke toepassingsmogelijkheden GenAI biedt in de cultureel erfgoedsector. Hierbij werden in fase 1 verschillende gebruiksscenario's onderzocht, zowel met betrekking tot de interne werkprocessen (bv. door de archivaris/collectieregistrator) als vanuit het perspectief van de eindgebruikers. Hierbij werden scripts ontwikkeld en data gegenereerd, die volgens de scenario's worden gevalideerd. 
+
+Een van de doelstellingen in fase 2 is het doorontwikkelen van de scripts die als Proof of Concept in fase I werden ontwikkeld, tot een toepassing die praktisch bruikbaar is voor archivarissen. Deze toepassing moet het verkennen van born digital archieven vereenvoudigen, zodat archivarissen sneller beslissingen kunnen nemen bij het verwerken van een archief. 
+
+Het onderzoeksproject 'Metadateren en Ontsluiten Digitale Archieven met behulp van Large Language Models', of kortweg MODAL, ging in het najaar van 2024 van start. Het doel van MODAL is te onderzoeken welke toepassingsmogelijkheden generatieve artificiële intelligentie (GenAI) de cultureelerfgoedsector biedt en de kennis hierover te verspreiden binnen de sector. 
+
+![MODAL_robot](images/openart-image_fIUnK6X9_1737467226673_raw.jpg)
+
+In oktober 2024 startte het ADVN in samenwerking met Amsab-ISG, Letterenhuis, MoMu en meemoo het project ‘Metadateren en Ontsluiten van Digitale Archieven met behulp van Large Language Models’ of kortweg MODAL. Large Language Models (LLM’s) zijn grootschalige taalmodellen die getraind zijn om zelf tekst te genereren door immense hoeveelheden tekstgegevens te verwerken. Het doel van MODAL is te onderzoeken wat deze vorm van generatieve artificiële intelligentie (GenAI) kan betekenen voor de cultureelerfgoedsector en de kennis hierover actief binnen die sector te delen.
+
+Cultureel erfgoed kent in toenemende mate digitale vormen. De exponentiële toevloed van born-digital archief is op vlak van beheer, verwerking en ontsluiting een enorme uitdaging voor archivarissen en collectiebeheerders. Hierdoor blijven veel digitale archieven en collecties ontoegankelijk en onzichtbaar voor onderzoekers en het brede publiek. Met de komst van GenAI ontstaan er nieuwe mogelijkheden om erfgoed efficiënter en rijker te ontsluiten. 
+
+Met behulp van LLM’s zouden collectiebeheerders en archivarissen ongestructureerde, tekstuele data sneller kunnen verwerken - bijvoorbeeld door samenvattingen te laten maken, teksten naar vorm te classificeren of kernwoorden te genereren. De mogelijkheid om omvangrijke collecties op een meer gebruiksvriendelijke en doeltreffende manier te doorzoeken, zou baanbrekende kansen voor diverse gebruikers kunnen bieden. 
+
+Binnen MODAL zullen niet alleen een aantal tools ontwikkeld en getest worden, maar wordt vooral ook onderzocht hoe deze hulpprogramma’s geïmplementeerd kunnen worden in de werkprocessen van archivarissen en collectiebeheerders. Sinds januari 2025 is Datable, een adviesbedrijf gespecialiseerd in digitaal erfgoed, aan de slag met onderzoeksmateriaal dat aangeleverd werd door de verschillende projectpartners.
+
+De ambitie van het MODAL-project is om enerzijds de onderzoeksresultaten breed te delen en anderzijds samenwerking en kennisuitwisseling rond het gebruik van LLM’s en GenAI in de cultureelerfgoedsector te stimuleren. Dat zal gebeuren door de ontwikkelde scripts uit te rollen als inzetbare toepassingen voor de sector en door het opstarten van een collegagroep.
