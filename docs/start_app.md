@@ -17,7 +17,15 @@
 
 ## **macOS** 
 
-TODO
+### **Start Docker** 
+
+
+### **Start de MODAL app** 
+
+* ga naar de folder `archive-app-macos-arm64`   
+* dubbelklik op het bestand `archive-agent`   
+* de applicatie opent in je default browser
+
 
 ## **Linux** 
 
