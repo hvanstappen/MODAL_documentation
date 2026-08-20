@@ -75,7 +75,7 @@ CPU draait en dus trager is.
 
 ---
 
-## Stap 2 — GPU-blok activeren in docker-compose.yml
+## Stap 2 — GPU-blok activeren in docker-compose.prod.yml
 
 Wijzig het `deploy`-blok in de `ollama`-service:
 

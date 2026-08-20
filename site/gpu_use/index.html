@@ -1237,7 +1237,7 @@
 <h1 id="gpu-activatie-voor-ollama-in-docker">GPU-activatie voor Ollama in Docker</h1>
 <p>Ollama draait standaard op de CPU in Docker. Om de NVIDIA GPU te gebruiken
 moeten twee dingen kloppen: (1) de juiste drivers/toolkit op de host, en
-(2) het <code>deploy</code>-blok geactiveerd in <code>docker-compose.yml</code>.</p>
+(2) het <code>deploy</code>-blok geactiveerd in <code>docker-compose.prod.yml</code>.</p>
 <blockquote>
 <p><strong>Opmerking:</strong> Alleen NVIDIA GPU's worden ondersteund via de Docker GPU-integratie.
 AMD en Intel GPU's vallen buiten scope van deze handleiding.</p>
@@ -1277,9 +1277,7 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 </code></pre>
-<ol>
-<li>Verifieer:</li>
-</ol>
+<p>3 Verifieer:</p>
 <pre><code class="language-bash">docker run --rm --gpus all nvidia/cuda:12.0-base-ubuntu22.04 nvidia-smi
 </code></pre>
 <hr />
@@ -1296,7 +1294,7 @@ ollama serve
 CPU draait en dus trager is.</p>
 <hr />
 <h2 id="stap-2-gpu-blok-activeren-in-docker-composeyml">Stap 2 — GPU-blok activeren in docker-compose.yml</h2>
-<p>Uncomment het <code>deploy</code>-blok in de <code>ollama</code>-service:</p>
+<p>Wijzig het <code>deploy</code>-blok in de <code>ollama</code>-service:</p>
 <pre><code class="language-yaml">ollama:
   image: ollama/ollama:0.23.0
   ports:
@@ -1312,7 +1310,7 @@ CPU draait en dus trager is.</p>
             capabilities: [gpu]
 </code></pre>
 <p>Herstart daarna de container:</p>
-<pre><code class="language-bash">docker compose up -d --force-recreate ollama
+<pre><code class="language-bash">docker compose -f docker-compose.prod.yml up -d --force-recreate ollama
 </code></pre>
 <hr />
 <h2 id="verificatie">Verificatie</h2>
