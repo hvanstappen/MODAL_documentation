@@ -11,6 +11,8 @@ De postGresQL database is bereikbaar met volgende credentials:
         user="archiveuser",  
         password="archivepass"
 
+**Opmerking**: De credentials worden bepaald bij installatie in het bestand docker-compose.prod.yml. 
+
 ### **Connectie via pgAdmin**
 
 Een koppeling maken met de PostGresQL database met [pgAdmin](https://www.pgadmin.org/):.
