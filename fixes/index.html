@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../opname/">
+        <link rel="prev" href="../gpu_use/">
       
       
-        <link rel="next" href="../analyse/">
+        <link rel="next" href="../about/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Verkennen - MODAL manual</title>
+        <title>Problemen oplossen - MODAL manual</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#diagnostic" class="md-skip">
+          Ga naar inhoud
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Verkennen
+              Problemen oplossen
             
           </span>
         </div>
@@ -417,20 +422,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -451,7 +454,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -522,17 +525,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../verkennen/" class="md-nav__link">
         
   
   
@@ -548,7 +544,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -731,18 +726,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -763,7 +760,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -834,10 +831,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../fixes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemen oplossen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -853,6 +875,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagnostic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poort-is-al-ingenomen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poort is al ingenomen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zenity-is-niet-ondersteund-of-geinstalleerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zenity is niet ondersteund of geïnstalleerd
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1021,6 +1094,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagnostic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poort-is-al-ingenomen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poort is al ingenomen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zenity-is-niet-ondersteund-of-geinstalleerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zenity is niet ondersteund of geïnstalleerd
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1036,16 +1150,43 @@
 
 
 
-  <h1>Verkennen</h1>
+  <h1>Problemen oplossen</h1>
 
-<p>Na opname kan je de inhoud van het archief verkennen:</p>
+<h2 id="diagnostic"><strong>Diagnostic</strong></h2>
+<p>Diagnostic.sh is een troubleshooting tool om te zien wat er draait en om alles netjes op te ruimen als de app vastloopt of niet goed start. Het biedt volgende functies:</p>
 <ol>
-<li>Klik op de knop 'Verkennen'.  </li>
-<li>Klik op een subfolder om de inhoud van een folder te bekijken.</li>
-<li>Klik op een bestand om de gegevens van een bestand te bekijken.</li>
-<li>Klik op de tabs om de resultaten van <a href="../analyse/">AI analyes</a> te zien.</li>
+<li>Poorten controleren : voor elke poort toont het of deze vrij of in gebruik is en welk proces (naam + PID) de poort gebruikt.  </li>
+<li>Docker status: controleert of Docker draait  </li>
+<li>Container status: toont alle draaiende Docker Compose containers van de app</li>
 </ol>
-<p><img alt="Verkennen van een archief" src="../images/verkennen.png" /></p>
+<p>Na de diagnose krijg je een menu met de mogelijkheid om processen op alle app poorten en/of Docker te stoppen.</p>
+<p>Je start de tool in een terminal:</p>
+<pre><code class="language-shell">./diagnostic.sh
+</code></pre>
+<h2 id="poort-is-al-ingenomen"><strong>Poort is al ingenomen</strong></h2>
+<p>Dit kan voorkomen als een van de onderdelen (bv. TIKA, Ollama) al werd geïnstalleerd. 
+Het bestand docker-compose-prod.yml voorziet al in redirects naar andere poorten, maar je kan dit verder aanpassen:</p>
+<ol>
+<li>Open het bestand docker-compose-prod.yml  </li>
+<li>Zoek naar het fragment<br />
+<code>tika:</code><br />
+<code>image: apache/tika:latest-full</code><br />
+<code>ports:</code><br />
+<code>- "7777:9998"</code>   </li>
+<li>Pas het poortnummer aan<br />
+<code>tika:</code><br />
+<code>image: apache/tika:latest-full</code><br />
+<code>ports:</code><br />
+<code>- "7778:9998"</code> </li>
+</ol>
+<h2 id="zenity-is-niet-ondersteund-of-geinstalleerd"><strong>Zenity is niet ondersteund of geïnstalleerd</strong></h2>
+<p>Sommige Linux-varianten ondersteunen de dialoog met het bestandsysteem niet via Zenity. Je kan dit testen met:</p>
+<pre><code class="language-shell">zenity --file-selection --directory --title=&quot;Test Dialog&quot;
+</code></pre>
+<p>Als dit geen venster opent, kan je Zenity installeren met:</p>
+<pre><code class="language-shell">sudo apt update
+sudo apt install zenity
+</code></pre>
 
 
 
