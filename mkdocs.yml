@@ -36,6 +36,8 @@ nav:
     - Modellen toevoegen: modellen_toevoegen.md
   - Geavanceerd gebruik:
       - Connectie met database: db_connect.md
+      - Gebruik GPU: gpu_use.md
+      - Problemen oplossen: fixes.md
   - Over MODAL:
     - Project MODAL: about.md
     - Veiligheid: security.md

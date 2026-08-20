@@ -1,5 +1,3 @@
-## **Verkennen**
-
 Na opname kan je de inhoud van het archief verkennen:
 
 1. Klik op de knop 'Verkennen'.  
