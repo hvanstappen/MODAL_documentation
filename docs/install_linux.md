@@ -16,7 +16,7 @@
         diagnostic.ps1  
         docker-compose.prod.yml
 
-### **Troubleshooting** {#troubleshooting-1}
+### **Troubleshooting**
 
 Mogelijk verschijnt een foutmelding bij het opstarten van de app, bv.:  
 ```Failed to start services```

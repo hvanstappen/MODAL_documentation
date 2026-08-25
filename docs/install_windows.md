@@ -28,4 +28,4 @@ Zie [https://docs.docker.com/desktop/setup/install/windows-install/](https://doc
 wsl --update
 ```
 
-	Meer informatie vind je op de [Docker installatie handleiding](https://docs.docker.com/desktop/setup/install/windows-install/#wsl-verification-and-setup)
+Meer informatie vind je op de [Docker installatie handleiding](https://docs.docker.com/desktop/setup/install/windows-install/#wsl-verification-and-setup)
