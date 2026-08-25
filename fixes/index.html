@@ -1217,13 +1217,13 @@ sudo apt install zenity
 <li>Pas het volgende stukje aan:</li>
 </ol>
 <pre><code class="language-shell">    db:
-    image: postgres:16-alpine
-    command: [&quot;postgres&quot;, &quot;-c&quot;, &quot;log_statement=all&quot;] # &lt;-- VOEG DEZE LIJN TOE
-    environment:
-      - POSTGRES_USER=archiveuser
-      - POSTGRES_PASSWORD=archivepass
-      - POSTGRES_DB=modaldb
-      ...
+        image: postgres:16-alpine
+        command: [&quot;postgres&quot;, &quot;-c&quot;, &quot;log_statement=all&quot;] # &lt;-- VOEG DEZE LIJN TOE
+        environment:
+          - POSTGRES_USER=archiveuser
+          - POSTGRES_PASSWORD=archivepass
+          - POSTGRES_DB=modaldb
+          ...
 </code></pre>
 <ol>
 <li>Start de applicatie weer op</li>
