@@ -1214,23 +1214,24 @@ sudo apt install zenity
 <ol>
 <li>Sluit de applicatie</li>
 <li>Open het bestand 'docker-compose.prod.yml'</li>
-<li>Pas het volgende stukje aan:</li>
+<li>
+<p>Pas het volgende stukje aan:</p>
+<p>db:
+image: postgres:16-alpine
+command: ["postgres", "-c", "log_statement=all"] # &lt;-- ADD THIS LINE
+environment:
+  - POSTGRES_USER=archiveuser
+  - POSTGRES_PASSWORD=archivepass
+  - POSTGRES_DB=modaldb
+  ...</p>
+</li>
+<li>
+<p>Start de applicatie weer op</p>
+</li>
+<li>Ga in jet terminal naar de folder met het bestand 'docker-compose.prod.yml'</li>
+<li>Geef het volgende commando:</li>
 </ol>
-<p>```db:
-    image: postgres:16-alpine
-    command: ["postgres", "-c", "log_statement=all"] # &lt;-- ADD THIS LINE
-    environment:
-      - POSTGRES_USER=archiveuser
-      - POSTGRES_PASSWORD=archivepass
-      - POSTGRES_DB=modaldb
-      ...</p>
-<pre><code>
-4. Start de applicatie weer op
-5. Ga in jet terminal naar de folder met het bestand 'docker-compose.prod.yml'
-6. Geef het volgende commando:
-
-```shell
-docker compose -f docker-compose.prod.yml logs -f db
+<pre><code class="language-shell">docker compose -f docker-compose.prod.yml logs -f db
 </code></pre>
 
 
