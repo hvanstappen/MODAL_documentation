@@ -45,3 +45,29 @@ Als dit geen venster opent, kan je Zenity installeren met:
 sudo apt update
 sudo apt install zenity
 ```
+
+## **Verbose optie**
+Gebruik deze fix wanneer je de lees/schrijfacties naar de database live wil volgen.
+
+1. Sluit de applicatie
+2. Open het bestand 'docker-compose.prod.yml'
+3. Pas het volgende stukje aan:
+
+```shell
+    db:
+    image: postgres:16-alpine
+    command: ["postgres", "-c", "log_statement=all"] # <-- VOEG DEZE LIJN TOE
+    environment:
+      - POSTGRES_USER=archiveuser
+      - POSTGRES_PASSWORD=archivepass
+      - POSTGRES_DB=modaldb
+      ...
+```
+
+4. Start de applicatie weer op
+5. Ga in jet terminal naar de folder met het bestand 'docker-compose.prod.yml'
+6. Geef het volgende commando:
+
+```shell
+docker compose -f docker-compose.prod.yml logs -f db
+```
