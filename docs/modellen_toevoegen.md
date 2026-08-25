@@ -12,6 +12,6 @@ In dit voorbeeld voegen we het model **qwen3** toe.
 4. Kopieer de naam van de gewenste versie, bv. **qwen3:1.7b**.
 ![voorbeeld ollama](images/ollama_qwenlist.png)
 5. Ga naar de Configuratiepagina van de MODAL app
-6. Plak de naam van het model in het vak ''
+6. Plak de naam van het model in het vak 'Modelnaam'
 ![voeg model in](images/settings_model_add.png)
 7. Klik op 'Downloaden'. Het model wordt gedownload en is even later beschikbaar voor AI-analyse.
