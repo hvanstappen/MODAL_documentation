@@ -1102,7 +1102,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">niet geschikt</td>
+<td style="text-align: left;">niet geschikt / geen resultaten</td>
 </tr>
 </tbody>
 </table>
@@ -1124,28 +1124,28 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">★</td>
 <td style="text-align: center;">★★</td>
-<td style="text-align: right;">0.3GB</td>
+<td style="text-align: right;">0.3 GB</td>
 </tr>
 <tr>
 <td><a href="#gemma3:1b">gemma3:1b</a></td>
 <td style="text-align: center;">★★</td>
 <td style="text-align: center;">★★★</td>
 <td style="text-align: center;">★★★★</td>
-<td style="text-align: right;">1GB</td>
+<td style="text-align: right;">1 GB</td>
 </tr>
 <tr>
 <td><a href="#nl_core_news_lg">nl_core_news_lg</a></td>
 <td style="text-align: center;">★★</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: right;">1.2GB</td>
+<td style="text-align: right;">1.2 GB</td>
 </tr>
 <tr>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: right;"></td>
+<td><a href="#deepseek-r1:1.5b">deepseek-r1:1.5b</a></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">★★</td>
+<td style="text-align: right;">1.1 GB</td>
 </tr>
 <tr>
 <td></td>
@@ -1184,13 +1184,16 @@ _ <em>Te veel bijvoeglijke naamwoorden geselecteerd, focus op zelfstandige naamw
 </ul>
 <h2 id="nl_core_news_lg"><a id="nl_core_news_lg"></a>nl_core_news_lg</h2>
 <p>nl_core_news_lg is een Nederlandstalig taalmodel voor spaCy. spaCy is een open-source Python-bibliotheek voor Natural Language Processing (NLP). Het model is bedoeld voor algemene NLP-taken in het Nederlands en ondersteunt onder meer: Named Entity Recognition (NER) – herkennen van entiteiten zoals personen, organisaties, locaties en datums. Het model is echter een algemeen taalmodel.  Gebruik dit model als je snel wil werken en/of geen krachtige hardware hebt.<br />
-<a href="spacy/nl_core_news_lg">Huggingface</a></p>
+<a href="https://huggingface.co/spacy/nl_core_news_lg/tree/main">Huggingface</a></p>
 <h3 id="beoordelingen_1">Beoordelingen</h3>
 <h4 id="entiteitsherkenning">Entiteitsherkenning</h4>
 <ul>
 <li><em>veel getallen die als entiteit worden herkend  eventueel varianten samenvoegen (stad oostende, oostende, ostend)  persoon als 'andere' herkend ('154 Saivator Dali')  niet volledig, maar geeft goeie eerste indruk</em></li>
 <li><em>Volledigheid kan ik niet beoordelen (geen ground truth gemaakt). De juistheid laat te wensen over. Enerzijds worden er wel veel entities juist herkend. Soms staat een entity er om onduidelijke redenen meerdere keren in. Veel entities zijn echter onjuist. Bij de analyse werden naast correcte entities ook antwoorden gegeven zoals "navbutton-home-hovered" of ".ms-vb-title" bij personen of "N/427/2002/4" bij locaties</em></li>
 </ul>
+<h2 id="_1"><a id="deepseek-r1:1.5b"></a></h2>
+<p>deepseek-r1:1.5b is een klein model. In de huidige versie van MODAL levert dit model min of meer bruikbare resultaten op voor Topic detection. het is echter niet geschikt voor NER en geeft slechte resultaten voor Samenvattingen.
+<a href="https://ollama.com/library/deepseek-r1:1.5b">Ollama</a></p>
 
 
 
