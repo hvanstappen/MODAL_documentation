@@ -23,7 +23,7 @@
     
     
       
-        <title>overzicht modellen - MODAL manual</title>
+        <title>Overzicht modellen - MODAL manual</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              overzicht modellen
+              Overzicht modellen
             
           </span>
         </div>
@@ -740,7 +740,7 @@
   <span class="md-ellipsis">
     
   
-    overzicht modellen
+    Overzicht modellen
   
 
     
@@ -1074,6 +1074,36 @@
 
 
 <h1 id="overzicht">Overzicht</h1>
+<p>Onderstaande tabel geef teen overzicht van de modellen die werden getest op MODAL, en de analayses waarvoor ze geschikt zijn. Let bij het kiezen van een model op de grootte, Een vuistregel is dat de omvang van het model best kleiner is dan je GPU (als je die gebruikt). Hoe groter het model, hoe trager de verwerking ove rhet algemeen verloopt. Als je een te groot model gebruikt, bestaat het risico dat je PC vastloopt.</p>
+<p>Voor elke analyse geven we een score:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">score</th>
+<th style="text-align: left;">bruikbaarheid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">****</td>
+<td style="text-align: left;">zeer geschikt</td>
+</tr>
+<tr>
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">geschikt, maar maar met hier en daar een fout</td>
+</tr>
+<tr>
+<td style="text-align: left;">**</td>
+<td style="text-align: left;">bruikbaar, maar met veel fouten</td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">niet geschikt</td>
+</tr>
+</tbody>
+</table>
+<p>In de detailbeschrijvingen vind je ook de link naar de Ollama-modellenpagina</p>
+<h1 id="overzichtstabel">Overzichtstabel</h1>
 <table>
 <thead>
 <tr>
@@ -1086,22 +1116,22 @@
 </thead>
 <tbody>
 <tr>
-<td>gemma3:270m</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?</td>
+<td><a href="#gemma3:270m">gemma3:270m</a></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">*</td>
+<td style="text-align: center;">**</td>
 <td style="text-align: right;">0.3GB</td>
 </tr>
 <tr>
-<td>gemma3:1b</td>
-<td style="text-align: center;">Y</td>
-<td style="text-align: center;">Y</td>
-<td style="text-align: center;">Y</td>
+<td><a href="#gemma3:1b">gemma3:1b</a></td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">***</td>
 <td style="text-align: right;">1GB</td>
 </tr>
 <tr>
 <td><a href="#nl_core_news_lg">nl_core_news_lg</a></td>
-<td style="text-align: center;">Y</td>
+<td style="text-align: center;">**</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: right;">1.2GB</td>
@@ -1123,10 +1153,10 @@
 </tbody>
 </table>
 <h1 id="modellen">Modellen</h1>
-<h2 id="gemma3270m">gemma3:270m</h2>
-<p>Gebruik dit model als je snel wil werken en/of geen krachtige hardware hebt.<br />
+<h2 id="gemma3270m"><a id="gemma3:270m"></a>gemma3:270m</h2>
+<p>Het kleinste model van de Gemma3-familie. Het is beperkt bruikbaar voor Samenvattingen of Topic detection.<br />
 <a href="https://ollama.com/library/gemma3:270m">Ollama</a></p>
-<h2 id="gemma31b">gemma3:1b</h2>
+<h2 id="gemma31b"><a id="gemma3:1b"></a>gemma3:1b</h2>
 <p>Gemma3:1b maakt deel uit van de Gemma lichtgewicht modelreeks van Google. De Gemma 3-modellen zijn multimodaal – ze verwerken zowel tekst als afbeeldingen – en ondersteunen meer dan 140 talen. Ze zijn blinken uit in taken zoals vraagbeantwoording, samenvatting en redenering, terwijl hun compacte ontwerp implementatie mogelijk maakt op apparaten met beperkte resources.<br />
 <a href="">Ollama</a></p>
 <h2 id="nl_core_news_lg"><a id="nl_core_news_lg"></a>nl_core_news_lg</h2>
