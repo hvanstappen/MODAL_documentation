@@ -2,7 +2,7 @@ De MODAL app maakt gebruik van Ollama voor het beheren en gebruiken van AI-model
 Dat betekent dat je in principe alle modellen die door Ollama worden ondersteund, kan gebruiken.
 
 Om een model toe te voegen moet je de naam kennen waarmee Ollama het model identificeert. 
-Je kan deze modellen opzoeken in de [modellenbibliotheek van Ollama](https://ollama.com/search).
+Je kan deze modellen opzoeken in het [overzicht met geteste modellen voor MODAL](modellen_lijst.md) of de [modellenbibliotheek van Ollama](https://ollama.com/search).
 
 In dit voorbeeld voegen we het model **qwen3** toe.
 

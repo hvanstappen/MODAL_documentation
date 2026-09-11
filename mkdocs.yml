@@ -30,11 +30,12 @@ nav:
     - Opname archief: opname.md
     - Verkennen: verkennen.md
     - Analyse archief: analyse.md
+    - Gegevens exporteren: export.md
   - MODAL aanpassen:
     - Instellingen: configuratie.md
     - Modellen selecteren: modellen_selecteren.md
     - Modellen toevoegen: modellen_toevoegen.md
-    - overzicht modellen: modellen_lijst.md
+    - Overzicht modellen: modellen_lijst.md
   - Geavanceerd gebruik:
       - Connectie met database: db_connect.md
       - Gebruik GPU: gpu_use.md
