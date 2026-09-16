@@ -967,17 +967,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        macOS
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1011,13 +1000,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#amd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        AMD
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="AMD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1275,17 +1281,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        macOS
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1319,13 +1314,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#amd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        AMD
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="AMD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1394,17 +1406,6 @@ sudo systemctl restart docker
 <pre><code class="language-bash">docker run --rm --gpus all nvidia/cuda:12.0-base-ubuntu22.04 nvidia-smi
 </code></pre>
 <hr />
-<h4 id="macos">macOS</h4>
-<p>NVIDIA GPU-passthrough in Docker is <strong>niet mogelijk op macOS</strong>. Apple-hardware
-gebruikt uitsluitend Apple Silicon (M-serie) of oudere AMD GPU's, en Docker op
-macOS draait via een Linux-VM die geen directe GPU-toegang heeft.</p>
-<p>Ollama draait op macOS wél geoptimaliseerd via <strong>Metal</strong> (Apple GPU-API), maar
-enkel als je Ollama <em>buiten Docker</em> installeert:</p>
-<pre><code class="language-bash">brew install ollama
-ollama serve
-</code></pre>
-<p>Wil je toch Ollama via Docker gebruiken op macOS, aanvaard dan dat het op de
-CPU draait en dus trager is.</p>
 <hr />
 <h3 id="stap-2-gpu-blok-activeren-in-docker-composeprodyml">Stap 2 — GPU-blok activeren in docker-compose.prod.yml</h3>
 <p>Wijzig het <code>deploy</code>-blok in de <code>ollama</code>-service:</p>
@@ -1433,7 +1434,18 @@ CPU draait en dus trager is.</p>
 <p>Of kijk in de Ollama-logs bij het laden van een model — je ziet dan iets als:</p>
 <pre><code>llm server loading model ... offloaded X layers to GPU
 </code></pre>
-<h2 id="_1"></h2>
+<h2 id="amd">AMD</h2>
+<h4 id="macos">macOS</h4>
+<p>NVIDIA GPU-passthrough in Docker is <strong>niet mogelijk op macOS</strong>. Apple-hardware
+gebruikt uitsluitend Apple Silicon (M-serie) of oudere AMD GPU's, en Docker op
+macOS draait via een Linux-VM die geen directe GPU-toegang heeft.</p>
+<p>Ollama draait op macOS wél geoptimaliseerd via <strong>Metal</strong> (Apple GPU-API), maar
+enkel als je Ollama <em>buiten Docker</em> installeert:</p>
+<pre><code class="language-bash">brew install ollama
+ollama serve
+</code></pre>
+<p>Wil je toch Ollama via Docker gebruiken op macOS, aanvaard dan dat het op de
+CPU draait en dus trager is.</p>
 
 
 
