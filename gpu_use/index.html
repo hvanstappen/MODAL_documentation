@@ -1012,10 +1012,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installeer-rocm" class="md-nav__link">
+  <a href="#stap-1-installeer-rocm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installeer ROCm
+        Stap 1- Installeer ROCm
       
     </span>
   </a>
@@ -1337,10 +1337,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installeer-rocm" class="md-nav__link">
+  <a href="#stap-1-installeer-rocm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installeer ROCm
+        Stap 1- Installeer ROCm
       
     </span>
   </a>
@@ -1457,10 +1457,10 @@ sudo systemctl restart docker
 <pre><code>llm server loading model ... offloaded X layers to GPU
 </code></pre>
 <h2 id="stappenplan-voor-amd">Stappenplan voor AMD</h2>
-<h3 id="installeer-rocm">Installeer ROCm</h3>
+<h3 id="stap-1-installeer-rocm">Stap 1- Installeer ROCm</h3>
 <p>Zie <a href="deze toelichting">https://rocm.docs.amd.com/en/latest/about/what-is-rocm.html</a>
 Een handleiding vind je [https://rocm.docs.amd.com/en/latest/install/rocm.html}(hier)
-<em>Let op!</em> Kies bovenaan de pagina eigen OS en GPU type, etc. om de juiste versie te garanderen</p>
+<em>Let op!</em> Kies bovenaan de pagina het juiste OS en GPU type, etc. om de juiste versie te garanderen</p>
 <h3 id="stap-2-gpu-blok-activeren-in-docker-composeprodyml_1">Stap 2 — GPU-blok activeren in docker-compose.prod.yml</h3>
 <p>Wijzig het deploy-blok in de ollama-service:</p>
 <pre><code class="language-yaml">ollama:
@@ -1471,7 +1471,7 @@ Een handleiding vind je [https://rocm.docs.amd.com/en/latest/install/rocm.html}(
     ollama_data:/root/.ollama
   devices:
     &quot;/dev/kfd:/dev/kfd&quot;
-    &quot;/dev/dri:/dev/dri&quot;
+    &quot;/dev/dri:/dev/dri&quot;```
 
 
 #### macOS
