@@ -1000,22 +1000,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#amd" class="md-nav__link">
+  <a href="#stappenplan-voor-amd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AMD
+        Stappenplan voor AMD
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AMD">
+    <nav class="md-nav" aria-label="Stappenplan voor AMD">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#installeer-rocm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        macOS
+        Installeer ROCm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stap-2-gpu-blok-activeren-in-docker-composeprodyml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stap 2 — GPU-blok activeren in docker-compose.prod.yml
       
     </span>
   </a>
@@ -1314,22 +1325,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#amd" class="md-nav__link">
+  <a href="#stappenplan-voor-amd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AMD
+        Stappenplan voor AMD
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AMD">
+    <nav class="md-nav" aria-label="Stappenplan voor AMD">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#installeer-rocm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        macOS
+        Installeer ROCm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stap-2-gpu-blok-activeren-in-docker-composeprodyml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stap 2 — GPU-blok activeren in docker-compose.prod.yml
       
     </span>
   </a>
@@ -1434,14 +1456,35 @@ sudo systemctl restart docker
 <p>Of kijk in de Ollama-logs bij het laden van een model — je ziet dan iets als:</p>
 <pre><code>llm server loading model ... offloaded X layers to GPU
 </code></pre>
-<h2 id="amd">AMD</h2>
-<h4 id="macos">macOS</h4>
-<p>NVIDIA GPU-passthrough in Docker is <strong>niet mogelijk op macOS</strong>. Apple-hardware
+<h2 id="stappenplan-voor-amd">Stappenplan voor AMD</h2>
+<h3 id="installeer-rocm">Installeer ROCm</h3>
+<p>Zie <a href="deze toelichting">https://rocm.docs.amd.com/en/latest/about/what-is-rocm.html</a>
+Een handleiding vind je [https://rocm.docs.amd.com/en/latest/install/rocm.html}(hier)
+<em>Let op!</em> Kies bovenaan de pagina eigen OS en GPU type, etc. om de juiste versie te garanderen</p>
+<h3 id="stap-2-gpu-blok-activeren-in-docker-composeprodyml_1">Stap 2 — GPU-blok activeren in docker-compose.prod.yml</h3>
+<p>Wijzig het deploy-blok in de ollama-service:</p>
+<pre><code class="language-yaml">ollama:
+  image: ollama/ollama:rocm
+  ports:
+    &quot;11434:11434&quot;
+  volumes:
+    ollama_data:/root/.ollama
+  devices:
+    &quot;/dev/kfd:/dev/kfd&quot;
+    &quot;/dev/dri:/dev/dri&quot;
+
+
+#### macOS
+
+NVIDIA GPU-passthrough in Docker is **niet mogelijk op macOS**. Apple-hardware
 gebruikt uitsluitend Apple Silicon (M-serie) of oudere AMD GPU's, en Docker op
-macOS draait via een Linux-VM die geen directe GPU-toegang heeft.</p>
-<p>Ollama draait op macOS wél geoptimaliseerd via <strong>Metal</strong> (Apple GPU-API), maar
-enkel als je Ollama <em>buiten Docker</em> installeert:</p>
-<pre><code class="language-bash">brew install ollama
+macOS draait via een Linux-VM die geen directe GPU-toegang heeft.
+
+Ollama draait op macOS wél geoptimaliseerd via **Metal** (Apple GPU-API), maar
+enkel als je Ollama *buiten Docker* installeert:
+
+```bash
+brew install ollama
 ollama serve
 </code></pre>
 <p>Wil je toch Ollama via Docker gebruiken op macOS, aanvaard dan dat het op de
