@@ -1403,13 +1403,9 @@
 
 
 <h1 id="gpu-activatie-voor-ollama-in-docker">GPU-activatie voor Ollama in Docker</h1>
-<p>Ollama draait standaard op de CPU in Docker. Om de NVIDIA GPU te gebruiken
+<p>Ollama draait standaard op de CPU in Docker. Om de GPU te gebruiken
 moeten twee dingen kloppen: (1) de juiste drivers/toolkit op de host, en
-(2) het <code>deploy</code>-blok geactiveerd in <code>docker-compose.prod.yml</code>.</p>
-<blockquote>
-<p><strong>Opmerking:</strong> De activatie verschilt naargelang het type GPU. NVIDIA GPU's worden ondersteund via de Docker GPU-integratie.
-AMD en Intel GPU's vallen buiten scope van deze handleiding.</p>
-</blockquote>
+(2) het <code>deploy</code>-blok moet geactiveerd zijn in <code>docker-compose.prod.yml</code>.</p>
 <hr />
 <h2 id="stappenplan-voor-nvidia-gpu">Stappenplan voor NVIDIA GPU</h2>
 <h3 id="stap-1-host-vereisten-per-platform">Stap 1 — Host-vereisten per platform</h3>
