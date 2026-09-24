@@ -19,7 +19,7 @@ Met de knoppen **Map | Lijst** kan je wisselen tussen hiërarchische weergave en
     11. Auteur
     12. Datum aangemaakt
 3. Klik op de tabs om de resultaten van [AI analyes](analyse.md) te zien.
-4. Klik op de naam van een bestand om de ge�xtraheerde tekst te zien.
+4. Klik op de naam van een bestand om de geëxtraheerde tekst te zien.
 
 ![Verkennen van een archief](images/verkennen.png)
 
