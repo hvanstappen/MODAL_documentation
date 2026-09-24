@@ -1,17 +1,16 @@
 # GPU-activatie voor Ollama in Docker
 
-Ollama draait standaard op de CPU in Docker. Om de NVIDIA GPU te gebruiken
+Ollama draait standaard op de CPU in Docker. Om de GPU te gebruiken
 moeten twee dingen kloppen: (1) de juiste drivers/toolkit op de host, en
-(2) het `deploy`-blok geactiveerd in `docker-compose.prod.yml`.
+(2) het `deploy`-blok moet geactiveerd zijn in `docker-compose.prod.yml`.
 
-> **Opmerking:** Alleen NVIDIA GPU's worden ondersteund via de Docker GPU-integratie.
-> AMD en Intel GPU's vallen buiten scope van deze handleiding.
 
 ---
+## Stappenplan voor NVIDIA GPU
 
-## Stap 1 — Host-vereisten per platform
+### Stap 1 — Host-vereisten per platform
 
-### Windows (met Docker Desktop + WSL2)
+#### Windows (met Docker Desktop + WSL2)
 
 1. Installeer de **NVIDIA Game Ready of Studio Driver** via
    [nvidia.com/drivers](https://www.nvidia.com/drivers) — versie ≥ 527.  
@@ -26,7 +25,7 @@ nvidia-smi
 
 ---
 
-### Linux (native Docker Engine)
+#### Linux (native Docker Engine)
 
 1. Installeer de **NVIDIA driver** via je package manager of
    [nvidia.com/drivers](https://www.nvidia.com/drivers) — versie ≥ 525 aanbevolen.
@@ -56,26 +55,11 @@ docker run --rm --gpus all nvidia/cuda:12.0-base-ubuntu22.04 nvidia-smi
 
 ---
 
-### macOS
 
-NVIDIA GPU-passthrough in Docker is **niet mogelijk op macOS**. Apple-hardware
-gebruikt uitsluitend Apple Silicon (M-serie) of oudere AMD GPU's, en Docker op
-macOS draait via een Linux-VM die geen directe GPU-toegang heeft.
-
-Ollama draait op macOS wél geoptimaliseerd via **Metal** (Apple GPU-API), maar
-enkel als je Ollama *buiten Docker* installeert:
-
-```bash
-brew install ollama
-ollama serve
-```
-
-Wil je toch Ollama via Docker gebruiken op macOS, aanvaard dan dat het op de
-CPU draait en dus trager is.
 
 ---
 
-## Stap 2 — GPU-blok activeren in docker-compose.prod.yml 
+### Stap 2 — GPU-blok activeren in docker-compose.prod.yml 
 
 Wijzig het `deploy`-blok in de `ollama`-service:
 
@@ -103,7 +87,7 @@ docker compose -f docker-compose.prod.yml up -d --force-recreate ollama
 
 ---
 
-## Verificatie
+### Verificatie
 
 Controleer of Ollama de GPU herkent:
 
@@ -116,3 +100,44 @@ Of kijk in de Ollama-logs bij het laden van een model — je ziet dan iets als:
 ```
 llm server loading model ... offloaded X layers to GPU
 ```
+
+
+## Stappenplan voor AMD
+
+### Stap 1- Installeer ROCm
+Zie [deze toelichting](https://rocm.docs.amd.com/en/latest/about/what-is-rocm.html). Een handleiding vind je [hier](https://rocm.docs.amd.com/en/latest/install/rocm.html)
+
+**Let op!** Kies bovenaan de pagina het juiste OS en GPU type, etc. om de juiste versie te garanderen
+
+### Stap 2 — GPU-blok activeren in docker-compose.prod.yml
+Wijzig het deploy-blok in de ollama-service:
+
+```yaml
+ollama:
+  image: ollama/ollama:rocm
+  ports:
+    "11434:11434"
+  volumes:
+    ollama_data:/root/.ollama
+  devices:
+    "/dev/kfd:/dev/kfd"
+    "/dev/dri:/dev/dri"
+```
+
+
+## macOS
+
+NVIDIA GPU-passthrough in Docker is **niet mogelijk op macOS**. Apple-hardware
+gebruikt uitsluitend Apple Silicon (M-serie) of oudere AMD GPU's, en Docker op
+macOS draait via een Linux-VM die geen directe GPU-toegang heeft.
+
+Ollama draait op macOS wél geoptimaliseerd via **Metal** (Apple GPU-API), maar
+enkel als je Ollama *buiten Docker* installeert:
+
+```bash
+brew install ollama
+ollama serve
+```
+
+Wil je toch Ollama via Docker gebruiken op macOS, aanvaard dan dat het op de
+CPU draait en dus trager is.

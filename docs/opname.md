@@ -18,7 +18,7 @@ Tijdens de opname worden de volgende acties uitgevoerd:
 * Het opnemen van een archief kan enige tijd duren. Je kan in afwachting andere archieven analyseren of bekijken.
 * Je kan een archief slechts eenmaal opnemen.
 
-Als het archief verwerkt is, verschijnt het in het Archievenoverzicht. Je kan nu [verkennen](verkennen.md) of [AI-analyses uitvoeren](analyse)
+Als het archief verwerkt is, verschijnt het in het Archievenoverzicht. Je kan nu [verkennen](verkennen.md) of [AI-analyses uitvoeren](analyse.md)
 
 ![Archievenoverzicht met een opgenomen archief](images/opname_resultaat1.png)
 

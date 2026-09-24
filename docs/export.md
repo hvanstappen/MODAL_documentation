@@ -5,6 +5,15 @@ Er zijn 2 exportformaten beschikbaar:
 * CSV: een eenvoudig tabelformaat, dat je kan openen als spreadsheet in bv. Excel of LibreOffice.
 * JSON: een gestructureerd formaat, waarin de hierarchie van de bestanden en mappen zichtbaar is.
 
+## Gegevens exporteren
+
+1. Ga naar het arcvhivenoverzicht
+2. Klik op Export
+3. Klik op het gewenste formaat (CSV of JSON)
+4. De export kan je terugvinden in de exportfolder (hieronder lees je hoe je die bepaalt).
+
+![exporteren](images/export-2.png)
+
 ## Exportfolder bepalen
 
 Je kan vooraf de map bepalen waar de geexporteerde gegevens worden bewaard:
@@ -15,11 +24,3 @@ Je kan vooraf de map bepalen waar de geexporteerde gegevens worden bewaard:
 
 ![exportfolder configureren](images/export-config.png)
 
-## Gegevens exporteren
-
-1. Ga naar het arcvhivenoverzicht
-2. Klik op Export
-3. Klik op het gewenste formaat (CSV of JSON)
-4. De export kan je terugvinden in de exportfolder.
-
-![exporteren](images/export-2.png)

@@ -29,7 +29,7 @@ nav:
     - Opstarten: start_app.md
     - Opname archief: opname.md
     - Verkennen: verkennen.md
-    - Analyse archief: analyse.md
+    - Analyseren: analyse.md
     - Gegevens exporteren: export.md
   - MODAL aanpassen:
     - Instellingen: configuratie.md
