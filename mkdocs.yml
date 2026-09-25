@@ -19,7 +19,7 @@ theme:
 
 
 nav:
-  - Home: index.md
+  - Start: index.md
   - Installatie:
       - Vereisten: vereisten.md
       - Windows: install_windows.md

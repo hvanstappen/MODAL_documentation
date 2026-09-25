@@ -13,6 +13,8 @@ Stel de parameters in voor de tekstverwerking bij analyses:
     * Het maximaal aantal tekens waarin entiteitsherkenning (NER) wordt uitgevoerd.
     * Default: 1000
 
+__Opmerking__: Als je zeker wil zijn dat heel lange teksten (>3000 woorden) volledig worden geanalyseerd, controleer dan ook of de [context window](fixes.md#context-window) lang genoeg is.
+
 ![verwerkingsinstellingen](images/settings_processing.png)
 
 ## Opmerkingen ##
