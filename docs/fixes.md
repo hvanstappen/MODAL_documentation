@@ -71,3 +71,15 @@ Gebruik deze fix wanneer je de lees/schrijfacties naar de database live wil volg
 ```shell
 docker compose -f docker-compose.prod.yml logs -f db
 ```
+
+## Context window
+De grootte van de tekst die aan een model wordt gegeven voor analyse, is beperkt ('Context window'). Het default LLM in Modal [gemma3:1b](https://ollama.com/library/gemma3:1b) heeft bijvoorbeeld 
+een context window van 32K tokens, wat neerkomt op ca. 24K woorden.
+
+[Ollama](https://docs.ollama.com/context-length) zelf stelt default ook een limiet op de context windows, in functie van de beschikbare VRAM:
+
+    * < 24 GiB VRAM: 4k context
+    * 24-48 GiB VRAM: 32k context
+    * >= 48 GiB VRAM: 256k context
+
+Dus op een GPU van 16GB beperkt Ollama het window tot 4K tokens of ca. 3000 woorden. 
