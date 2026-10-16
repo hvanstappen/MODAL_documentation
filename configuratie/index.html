@@ -556,6 +556,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoeken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../analyse/" class="md-nav__link">
         
   
@@ -739,6 +767,17 @@
     <span class="md-ellipsis">
       
         Opmerkingen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantisch-zoeken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantisch zoeken
       
     </span>
   </a>
@@ -1167,6 +1206,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#semantisch-zoeken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantisch zoeken
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1184,15 +1234,13 @@
 
 
 
-  <h1>Instellingen</h1>
-
 <h2 id="verwerkingsinstellingen"><strong>Verwerkingsinstellingen</strong></h2>
 <p>Stel de parameters in voor de tekstverwerking bij analyses:</p>
 <ul>
 <li>
 <p><strong>Minimale verwerkingslengte:</strong> </p>
 <ul>
-<li>Bestanden met minder tekens dan dit minimum worden overgeslagen bij de analyse. dit zorgt er voor dat er geen analyse wordt uitgevoerd op weinig betekenisvolle bestanden.</li>
+<li>Bestanden met minder tekens dan dit minimum worden overgeslagen bij de analyse. Dit zorgt er voor dat er geen analyse wordt uitgevoerd op weinig betekenisvolle bestanden.</li>
 </ul>
 </li>
 <li>
@@ -1217,6 +1265,39 @@
 <li>Vaak volstaan de eerste zinnen van een document om de inhoud te duiden.</li>
 <li>Hoe groter het gebruikte tekstfragment, hoe langer de analyse duurt. Bij hoge aantallen kan de app vastlopen.</li>
 <li>Als je het maximaal aantal tekens op '0' zet, wordt de volledige tekst gebruikt.</li>
+</ul>
+<h1 id="semantisch-zoeken">Semantisch zoeken</h1>
+<p>Semantisch zoeken bevat volgende parameters voor het genereren van embeddings en voor zoekopdrachten op betekenis.</p>
+<ul>
+<li>
+<p><strong>Fragmentgrootte:</strong> </p>
+<ul>
+<li>Aantal tekens per fragment. Grotere fragmenten verbeteren het resultaat, maar zoekacties zullen trager zijn.</li>
+</ul>
+</li>
+<li>
+<p><strong>Max. fragmenten per bestand:</strong></p>
+<ul>
+<li>Begrenst het aantal fragmenten per bestand bij het maken van embeddings. Hoe meer fragementen, hoe beter het resultaat, maar hoe trager de zoekactie</li>
+<li>Geen limiet: de volledige tekst wordt embed</li>
+</ul>
+</li>
+<li>
+<p><strong>Maximale afstand:</strong></p>
+<ul>
+<li>Afstand is een maat voor de semantische overeenkomst tussen de zoekvraag en de tekst. Hoe groter de afstand, 
+  hoe lager de semantische overeenkomst en dus hoe meer resultaten. Hogere afstand levert dus minder relevante resultaten op. Resultaten met een grotere afstand dan deze waarde worden niet getoond.</li>
+</ul>
+</li>
+<li>
+<p><strong>Aantal resultaten:</strong></p>
+<ul>
+<li>Het maximale aantal zoekresultaten dat wordt getoond.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opmerking:</strong> Als je de instellingen aanpast, kan je de embeddings van een archief <a href="http://0.0.0.0:8000/search/#stappen">vernieuwen.</a>  </p>
+</li>
 </ul>
 
 
