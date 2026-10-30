@@ -1339,11 +1339,11 @@
 <h2 id="diagnostic"><strong>Diagnostic</strong></h2>
 <p>Diagnostic.sh is een troubleshooting tool om te zien wat er draait en om alles netjes op te ruimen als de app vastloopt of niet goed start. Het biedt volgende functies:</p>
 <ol>
-<li>Poorten controleren : voor elke poort toont het of deze vrij of in gebruik is en welk proces (naam + PID) de poort gebruikt.  </li>
-<li>Docker status: controleert of Docker draait  </li>
-<li>Container status: toont alle draaiende Docker Compose containers van de app</li>
+<li>Poorten controleren: voor elke poort toont het of deze vrij of in gebruik is en welk proces (naam + PID) de poort gebruikt.  </li>
+<li>Docker status: controleert of Docker draait.  </li>
+<li>Container status: toont alle draaiende Docker Compose containers van de app.</li>
 </ol>
-<p>Na de diagnose krijg je een menu met de mogelijkheid om processen op alle app poorten en/of Docker te stoppen.</p>
+<p>Na de diagnose krijg je een menu met de mogelijkheid om processen op alle app-poorten en/of Docker te stoppen.</p>
 <p>Je start de tool in een terminal:</p>
 <pre><code class="language-shell">./diagnostic.sh
 </code></pre>
@@ -1351,13 +1351,13 @@
 <p>Dit kan voorkomen als een van de onderdelen (bv. TIKA, Ollama) al werd geïnstalleerd. 
 Het bestand docker-compose-prod.yml voorziet al in redirects naar andere poorten, maar je kan dit verder aanpassen:</p>
 <ol>
-<li>Open het bestand docker-compose-prod.yml  </li>
-<li>Zoek naar het fragment<br />
+<li>Open het bestand docker-compose-prod.yml.  </li>
+<li>Zoek naar het fragment:<br />
 <code>tika:</code><br />
 <code>image: apache/tika:latest-full</code><br />
 <code>ports:</code><br />
 <code>- "7777:9998"</code>   </li>
-<li>Pas het poortnummer aan<br />
+<li>Pas het poortnummer aan:<br />
 <code>tika:</code><br />
 <code>image: apache/tika:latest-full</code><br />
 <code>ports:</code><br />
@@ -1372,10 +1372,10 @@ Het bestand docker-compose-prod.yml voorziet al in redirects naar andere poorten
 sudo apt install zenity
 </code></pre>
 <h2 id="verbose-optie"><strong>Verbose optie</strong></h2>
-<p>Gebruik deze fix wanneer je de lees/schrijfacties naar de database live wil volgen:</p>
+<p>Gebruik deze fix wanneer je de lees- en schrijfacties naar de database live wil volgen:</p>
 <ol>
-<li>Sluit de applicatie</li>
-<li>Open het bestand 'docker-compose.prod.yml'</li>
+<li>Sluit de applicatie.</li>
+<li>Open het bestand 'docker-compose.prod.yml'.</li>
 <li>Pas het volgende stukje aan:</li>
 </ol>
 <pre><code class="language-shell">    db:
@@ -1388,21 +1388,20 @@ sudo apt install zenity
           ...
 </code></pre>
 <ol>
-<li>Start de applicatie weer op</li>
-<li>Ga in je terminal naar de folder met het bestand 'docker-compose.prod.yml'</li>
+<li>Start de applicatie weer op.</li>
+<li>Ga in je terminal naar de folder met het bestand 'docker-compose.prod.yml'.</li>
 <li>Geef het volgende commando:</li>
 </ol>
 <pre><code class="language-shell">docker compose -f docker-compose.prod.yml logs -f db
 </code></pre>
 <h2 id="context-window">Context window</h2>
-<p>De grootte van de tekst die aan een model wordt gegeven voor analyse, is beperkt ('Context window'). Het default LLM in Modal <a href="https://ollama.com/library/gemma3:1b">gemma3:1b</a> heeft bijvoorbeeld 
-een context window van 32K tokens, wat neerkomt op ca. 24K woorden.</p>
+<p>De grootte van de tekst die aan een model wordt gegeven voor analyse, is beperkt ('Context window'). Het default LLM in Modal <a href="https://ollama.com/library/gemma3:1b">gemma3:1b</a> heeft bijvoorbeeld een context window van 32K tokens, wat neerkomt op ca. 24K woorden.</p>
 <p><a href="https://docs.ollama.com/context-length">Ollama</a> zelf stelt default ook een limiet op de context windows, in functie van de beschikbare VRAM:</p>
 <pre><code>* &lt; 24 GiB VRAM: 4k context
 * 24-48 GiB VRAM: 32k context
 * &gt;= 48 GiB VRAM: 256k context
 </code></pre>
-<p>Dus op een GPU van 16GB beperkt Ollama het window tot 4K tokens of ca. 3000 woorden. </p>
+<p>Op een GPU van 16GB beperkt Ollama dus het window tot 4K tokens of ca. 3000 woorden. </p>
 
 
 
