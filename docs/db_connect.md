@@ -1,7 +1,7 @@
 ## **PostGresQL integratie**
-De MODAL app maakt gebruik van een PostgreSQL database, waarin alle gegevens over bestanden en de resultaten van AI-analyses worden bewaard. 
+De MODAL-app maakt gebruik van een PostgreSQL database, waarin alle gegevens over bestanden en de resultaten van AI-analyses worden bewaard. 
 Hieronder leggen we uit hoe je een rechtstreekse koppeling met de database maakt. 
-**Let op!** Door gegevens rechtstreeks in de database aan te passen, is het mogelijk dat gegevens in de MODAL app verdwijnen of niet meer worden getoond. 
+**Let op!** Door gegevens rechtstreeks in de database aan te passen, is het mogelijk dat gegevens in de MODAL-app verdwijnen of niet meer worden getoond. 
 
 De postGresQL database is bereikbaar met volgende credentials:  
 
@@ -11,7 +11,7 @@ De postGresQL database is bereikbaar met volgende credentials:
         user="archiveuser",  
         password="archivepass"
 
-**Opmerking**: De credentials worden bepaald bij installatie in het bestand docker-compose.prod.yml. 
+**Opmerking**: de credentials worden bepaald bij installatie in het bestand docker-compose.prod.yml. 
 
 ### **Connectie via pgAdmin**
 

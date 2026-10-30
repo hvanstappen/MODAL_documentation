@@ -2,12 +2,12 @@
 
 ### **Installatie Docker** 
 
-* Installeer [Docker Engine](https://docs.docker.com/engine/install/ubuntu/%20) of [Docker Desktop](https://docs.docker.com/desktop/setup/install/linux/) voor Linux
+* Installeer [Docker Engine](https://docs.docker.com/engine/install/ubuntu/%20) of [Docker Desktop](https://docs.docker.com/desktop/setup/install/linux/) voor Linux.
 
-### **Installatie MODAL app** 
+### **Installatie MODAL-app** 
 
-* Ga naar de [releases pagina](https://github.com/AboutCodingBE/modal-docker-monorepo/releases) van MODAL  
-* Klik op het bestand **archive-app-linux.zip** van de laatste release (bv. 0.0.19) en download het bestand  
+* Ga naar de [releasespagina](https://github.com/AboutCodingBE/modal-docker-monorepo/releases) van MODAL.
+* Klik op het bestand **archive-app-linux.zip** van de laatste release (bv. 0.0.19) en download het bestand.
 * Ga naar het gedownloade bestand en extraheer (unzip) het. Je ziet een folder `archive-app-windows` met daarin de volgende bestanden:
 
         README-RELEASE.md  
@@ -21,7 +21,7 @@
 Mogelijk verschijnt een foutmelding bij het opstarten van de app, bv.:  
 ```Failed to start services```
 
-De MODAL applicatie werkt niet out of the box als Docker enkel beschikbaar is als root user. Het is ook beter om de app niet op te starten als root user.
+De MODAL applicatie werkt niet *out of the box* als Docker enkel beschikbaar is als *root user.* Het is ook beter om de app niet als *root user* op te starten.
 
 Test dit door volgende commandos in te voeren in je Terminal:
 

@@ -2,11 +2,11 @@
 
 Diagnostic.sh is een troubleshooting tool om te zien wat er draait en om alles netjes op te ruimen als de app vastloopt of niet goed start. Het biedt volgende functies:
 
-1. Poorten controleren : voor elke poort toont het of deze vrij of in gebruik is en welk proces (naam \+ PID) de poort gebruikt.  
-2. Docker status: controleert of Docker draait  
-3. Container status: toont alle draaiende Docker Compose containers van de app
+1. Poorten controleren: voor elke poort toont het of deze vrij of in gebruik is en welk proces (naam \+ PID) de poort gebruikt.  
+2. Docker status: controleert of Docker draait.  
+3. Container status: toont alle draaiende Docker Compose containers van de app.
 
-Na de diagnose krijg je een menu met de mogelijkheid om processen op alle app poorten en/of Docker te stoppen.
+Na de diagnose krijg je een menu met de mogelijkheid om processen op alle app-poorten en/of Docker te stoppen.
 
 Je start de tool in een terminal:
 
@@ -19,13 +19,13 @@ Je start de tool in een terminal:
 Dit kan voorkomen als een van de onderdelen (bv. TIKA, Ollama) al werd geïnstalleerd. 
 Het bestand docker-compose-prod.yml voorziet al in redirects naar andere poorten, maar je kan dit verder aanpassen:
 
-1. Open het bestand docker-compose-prod.yml  
-2. Zoek naar het fragment  
+1. Open het bestand docker-compose-prod.yml.  
+2. Zoek naar het fragment:  
     `tika:`  
        `image: apache/tika:latest-full`  
        `ports:`  
          `- "7777:9998"`   
-3. Pas het poortnummer aan  
+3. Pas het poortnummer aan:  
     `tika:`  
        `image: apache/tika:latest-full`  
        `ports:`  
@@ -47,10 +47,10 @@ sudo apt install zenity
 ```
 
 ## **Verbose optie**
-Gebruik deze fix wanneer je de lees/schrijfacties naar de database live wil volgen:
+Gebruik deze fix wanneer je de lees- en schrijfacties naar de database live wil volgen:
 
-1. Sluit de applicatie
-2. Open het bestand 'docker-compose.prod.yml'
+1. Sluit de applicatie.
+2. Open het bestand 'docker-compose.prod.yml'.
 3. Pas het volgende stukje aan:
 
 ```shell
@@ -64,8 +64,8 @@ Gebruik deze fix wanneer je de lees/schrijfacties naar de database live wil volg
           ...
 ```
 
-4. Start de applicatie weer op
-5. Ga in je terminal naar de folder met het bestand 'docker-compose.prod.yml'
+4. Start de applicatie weer op.
+5. Ga in je terminal naar de folder met het bestand 'docker-compose.prod.yml'.
 6. Geef het volgende commando:
 
 ```shell
@@ -73,8 +73,7 @@ docker compose -f docker-compose.prod.yml logs -f db
 ```
 
 ## Context window
-De grootte van de tekst die aan een model wordt gegeven voor analyse, is beperkt ('Context window'). Het default LLM in Modal [gemma3:1b](https://ollama.com/library/gemma3:1b) heeft bijvoorbeeld 
-een context window van 32K tokens, wat neerkomt op ca. 24K woorden.
+De grootte van de tekst die aan een model wordt gegeven voor analyse, is beperkt ('Context window'). Het default LLM in Modal [gemma3:1b](https://ollama.com/library/gemma3:1b) heeft bijvoorbeeld een context window van 32K tokens, wat neerkomt op ca. 24K woorden.
 
 [Ollama](https://docs.ollama.com/context-length) zelf stelt default ook een limiet op de context windows, in functie van de beschikbare VRAM:
 
@@ -82,4 +81,4 @@ een context window van 32K tokens, wat neerkomt op ca. 24K woorden.
     * 24-48 GiB VRAM: 32k context
     * >= 48 GiB VRAM: 256k context
 
-Dus op een GPU van 16GB beperkt Ollama het window tot 4K tokens of ca. 3000 woorden. 
+Op een GPU van 16GB beperkt Ollama dus het window tot 4K tokens of ca. 3000 woorden. 

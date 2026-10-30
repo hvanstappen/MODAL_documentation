@@ -1,5 +1,5 @@
 # Overzicht
-Onderstaande tabel geef teen overzicht van de modellen die werden getest op MODAL, en de analayses waarvoor ze geschikt zijn. Let bij het kiezen van een model op de grootte, Een vuistregel is dat de omvang van het model best kleiner is dan je GPU (als je die gebruikt). Hoe groter het model, hoe trager de verwerking ove rhet algemeen verloopt. Als je een te groot model gebruikt, bestaat het risico dat je PC vastloopt.
+Onderstaande tabel geeft een overzicht van de modellen die op MODAL werden getest en de analyses waarvoor ze geschikt zijn. Let bij het kiezen van een model op de grootte; een vuistregel is dat de omvang van het model best kleiner is dan je GPU (als je die gebruikt). Hoe groter het model, hoe trager de verwerking over het algemeen verloopt. Als je een te groot model gebruikt, bestaat het risico dat je pc vastloopt.
 
 Voor elke analyse geven we een score:
 
@@ -11,7 +11,7 @@ Voor elke analyse geven we een score:
 | ★★       | bruikbaar, maar met veel fouten |
 | -        | niet geschikt / geen resultaten |
 
-In de detailbeschrijvingen vind je ook de link naar de Ollama-modellenpagina
+In de detailbeschrijvingen vind je ook de link naar de Ollama-modellenpagina.
 
 # Overzichtstabel
 
@@ -31,25 +31,25 @@ Het kleinste model van de Gemma3-familie. Het is beperkt bruikbaar voor Samenvat
 [Ollama](https://ollama.com/library/gemma3:270m)
 
 ## <a id="gemma3:1b"></a>gemma3:1b
-Gemma3:1b maakt deel uit van de Gemma lichtgewicht modelreeks van Google. De Gemma 3-modellen zijn multimodaal – ze verwerken zowel tekst als afbeeldingen – en ondersteunen meer dan 140 talen. Ze zijn blinken uit in taken zoals vraagbeantwoording, samenvatting en redenering, terwijl hun compacte ontwerp implementatie mogelijk maakt op apparaten met beperkte resources.  
+Gemma3:1b maakt deel uit van de Gemma lichtgewicht modelreeks van Google. De Gemma 3-modellen zijn multimodaal – ze verwerken zowel tekst als afbeeldingen – en ondersteunen meer dan 140 talen. Ze blinken uit in taken zoals vraagbeantwoording, samenvatting en redenering, terwijl hun compacte ontwerp implementatie mogelijk maakt op minder krachtige apparaten.  
 [Ollama]()
 
 ### Beoordelingen 
 
 #### Samenvatting
-- _Sterk wisselende kwaliteit. Samenvatting op mapniveau zeer vaak niet bruikbaar_
+- _Sterk wisselende kwaliteit. Samenvatting op mapniveau zeer vaak niet bruikbaar._
 - _Het is voor een deel wel accuraat. Maar het gaat altijd voorbij aan de essentie. Bv. een programma van een studiedag over natuurbeheer. De summary identificeert correct dat het document over natuurbeheer gaat, maar niet dat het over een programma van een studiedag gaat._
-- _verzonnen woorden, verzonnen feiten en het lijkt alsof er meerdere documenten in het archief zitten, in realiteit was er slechts 1 heel kort document (mogelijke medeverklaring van  hallucinaties?)_
-- _Voor het geteste archief zijn de samenvattingen goed, zowel op top-level als op de lagere niveaus van de mappenstructuur_
-- _Sterk wisselende kwaliteit. Samenvatting op mapniveau zeer vaak niet bruikbaar_
+- _Verzonnen woorden, verzonnen feiten en het lijkt alsof er meerdere documenten in het archief zitten, in realiteit was er slechts 1 heel kort document (mogelijke medeverklaring van  hallucinaties?)_
+- _Voor het geteste archief zijn de samenvattingen goed, zowel op top-level als op de lagere niveaus van de mappenstructuur._
+- _Sterk wisselende kwaliteit. Samenvatting op mapniveau zeer vaak niet bruikbaar._
 
 #### Entiteitsherkenning (NER)
 - _Enorm veel ruis. Lidwoorden zijn ook entiteiten, zou toch gefilterd kunnen worden. De categorie "overige" is niet erg nuttig._
 
 #### Topic detection
-- _af en toe hallucinaties (verzonnen topic WO II), maar dat was bij tekst met zeer slechte ocr_
-- _Behoorlijk goed. Voor het geteste archief geven de topics een duidelijk beeld van de inhoud_
-_ _Te veel bijvoeglijke naamwoorden geselecteerd, focus op zelfstandige naamwoorden_
+- _Af en toe hallucinaties (verzonnen topic WO II), maar dat was bij tekst met zeer slechte ocr._
+- _Behoorlijk goed. Voor het geteste archief geven de topics een duidelijk beeld van de inhoud._
+_ _Te veel bijvoeglijke naamwoorden geselecteerd, focus op zelfstandige naamwoorden._
 
 ## <a id="nl_core_news_lg"></a>nl_core_news_lg
 nl_core_news_lg is een Nederlandstalig taalmodel voor spaCy. spaCy is een open-source Python-bibliotheek voor Natural Language Processing (NLP). Het model is bedoeld voor algemene NLP-taken in het Nederlands en ondersteunt onder meer: Named Entity Recognition (NER) – herkennen van entiteiten zoals personen, organisaties, locaties en datums. Het model is echter een algemeen taalmodel.  Gebruik dit model als je snel wil werken en/of geen krachtige hardware hebt.  

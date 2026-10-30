@@ -29,6 +29,7 @@ nav:
     - Opstarten: start_app.md
     - Opname archief: opname.md
     - Verkennen: verkennen.md
+    - Zoeken: search.md
     - Analyseren: analyse.md
     - Gegevens exporteren: export.md
   - MODAL aanpassen:
@@ -41,6 +42,8 @@ nav:
       - Gebruik GPU: gpu_use.md
       - Problemen oplossen: fixes.md
   - Over MODAL:
-    - Project MODAL: about.md
+    - Project MODAL: over.md
+    - Projectpartners: partners.md
+    - Roadmap: roadmap.md
     - Veiligheid: security.md
     - Ontwikkeling: code.md

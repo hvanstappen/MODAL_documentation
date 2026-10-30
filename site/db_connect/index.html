@@ -556,6 +556,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoeken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../analyse/" class="md-nav__link">
         
   
@@ -1054,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../over/" class="md-nav__link">
         
   
   
@@ -1062,6 +1090,62 @@
     
   
     Project MODAL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projectpartners
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
   
 
     
@@ -1221,9 +1305,9 @@
   <h1>Connectie met database</h1>
 
 <h2 id="postgresql-integratie"><strong>PostGresQL integratie</strong></h2>
-<p>De MODAL app maakt gebruik van een PostgreSQL database, waarin alle gegevens over bestanden en de resultaten van AI-analyses worden bewaard. 
+<p>De MODAL-app maakt gebruik van een PostgreSQL database, waarin alle gegevens over bestanden en de resultaten van AI-analyses worden bewaard. 
 Hieronder leggen we uit hoe je een rechtstreekse koppeling met de database maakt. 
-<strong>Let op!</strong> Door gegevens rechtstreeks in de database aan te passen, is het mogelijk dat gegevens in de MODAL app verdwijnen of niet meer worden getoond. </p>
+<strong>Let op!</strong> Door gegevens rechtstreeks in de database aan te passen, is het mogelijk dat gegevens in de MODAL-app verdwijnen of niet meer worden getoond. </p>
 <p>De postGresQL database is bereikbaar met volgende credentials:  </p>
 <pre><code>    host="localhost",  
     port=5442,  
@@ -1231,7 +1315,7 @@ Hieronder leggen we uit hoe je een rechtstreekse koppeling met de database maakt
     user="archiveuser",  
     password="archivepass"
 </code></pre>
-<p><strong>Opmerking</strong>: De credentials worden bepaald bij installatie in het bestand docker-compose.prod.yml. </p>
+<p><strong>Opmerking</strong>: de credentials worden bepaald bij installatie in het bestand docker-compose.prod.yml. </p>
 <h3 id="connectie-via-pgadmin"><strong>Connectie via pgAdmin</strong></h3>
 <p>Een koppeling maken met de PostGresQL database met <a href="https://www.pgadmin.org/">pgAdmin</a>:.</p>
 <ol>

@@ -7,13 +7,13 @@ Voor macOS zijn twee versies beschikbaar: macos-arm64 en macos-intel. Kies de ju
 Zie de [Docker-documentatie voor macOS](https://docs.docker.com/desktop/setup/install/mac-install/) voor meer details.
 
 * Download Docker Desktop for Mac via de officiële Docker-website.  
-* Open het gedownloade .dmg-bestand en sleep Docker.app naar de map Programma's (Applications)  
-* Open vervolgens Docker vanuit de map Programma's. Mogelijk wordt gevraagd de toepassing te bevestigen of beheerdersrechten te verlenen om de installatie af te ronden.  
-* Volg de instructies op het scherm om Docker Desktop te configureren. Mogelijk wordt gevraagd je aan te melden met een Docker-account of de benodigde systeemcomponenten te installeren.
+* Open het gedownloade .dmg-bestand en sleep Docker.app naar de map Programma's (Applications).  
+* Open vervolgens Docker vanuit de map Programma's. Mogelijk wordt er gevraagd om de toepassing te bevestigen of beheerdersrechten te verlenen om de installatie af te ronden.  
+* Volg de instructies op het scherm om Docker Desktop te configureren. Mogelijk wordt er gevraagd om je aan te melden met een Docker-account of de benodigde systeemcomponenten te installeren.
 
-### **Installatie MODAL app**
+### **Installatie MODAL-app**
 
-* Ga naar de [releases pagina](https://github.com/AboutCodingBE/modal-docker-monorepo/releases) van MODAL  
+* Ga naar de [releasespagina](https://github.com/AboutCodingBE/modal-docker-monorepo/releases) van MODAL.
 * Klik op het bestand **archive-app-macos-arm64.zip** van de laatste release (bv. 0.0.19) en download het bestand.  
 * Ga naar het gedownloade bestand en extraheer (unzip) het. Je ziet een folder `archive-app-macos-arm64` met daarin de volgende bestanden:
 
